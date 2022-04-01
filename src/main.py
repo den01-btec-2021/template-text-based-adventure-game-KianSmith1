@@ -1,3 +1,4 @@
+import time 
 def main():
     
     print("Welcome to the Game")
@@ -55,7 +56,11 @@ def main():
         exit()
 
 def in_room(backpack,lives,room_direction,puzzle,puzzle_solution,key_number):
-  print(f"You entered the {room_direction} Room.")
+  print(f"You entered the {room_direction} Room,The timer has started you have .. ammount of time.")
+  #start timmer
+
+  #5 second timmer
+
   puzzle_guess = input(puzzle)
   if puzzle_guess == puzzle_solution:
     print(f"Correct. Key {key_number} collected.")
